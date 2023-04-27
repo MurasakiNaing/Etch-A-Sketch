@@ -1,0 +1,20 @@
+:root {
+    --grid-col: 1;
+    --grid-row: 1;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-col), 1fr);
+    grid-template-rows: repeat(var(--grid-row), 1fr);
+    height: 500px;
+    width: 500px;
+}
+
+.colored {
+    background-color: black;
+}
+
+.grid-item {
+    border: 1px solid black;
+}
